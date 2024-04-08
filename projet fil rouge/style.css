@@ -1,0 +1,189 @@
+/* Style global */
+   body {
+       font-family: Arial, sans-serif; /* Police par défaut */
+       margin: 0; /* Supprime les marges par défaut */
+       padding: 0; /* Supprime les espaces internes par défaut */
+   }
+
+/* Style pour l'en-tête et la barre de navigation */
+header {
+    background-color: #f8f9fa; /* Couleur de fond */
+    padding: 1rem 0; /* Espacement intérieur */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Ombre */
+}
+
+.navbar {
+    background-color: #f8f9fa; /* Couleur de fond */
+    padding: 0.5rem 1rem; /* Espacement intérieur */
+    display: flex; /* Affichage en flexbox */
+    justify-content: space-between; /* Alignement horizontal */
+    align-items: center; /* Alignement vertical */
+}
+
+.navbar-collapse {
+    display: flex; /* Affichage en flexbox */
+    justify-content: end; /* Alignement horizontal à droite */
+    align-items: center; /* Alignement vertical au centre */
+}
+
+.navbar-brand {
+    font-size: 1.25rem; /* Taille de police */
+    font-weight: bold; /* Gras */
+    color: #000; /* Couleur du texte */
+}
+
+/* Style pour la liste des liens */
+.navbar-nav {
+    margin: 0; /* Supprime les marges */
+    padding: 0; /* Supprime les espaces internes */
+    list-style: none; /* Supprime les puces */
+    display: flex; /* Affichage en flexbox */
+    justify-content: end; /* Alignement horizontal à droite */
+}
+
+.nav-item {
+    margin-right: 1rem; /* Marge à droite */
+}
+
+.nav-link {
+    text-decoration: none; /* Supprime la décoration du texte */
+    color: #007bff; /* Couleur du texte */
+}
+
+.nav-link.active {
+    font-weight: bold; /* Gras pour le lien actif */
+}
+
+.dropdown-toggle {
+    cursor: pointer; /* Curseur pointeur */
+}
+
+.dropdown-toggle::after {
+    content: '\25BC'; /* Flèche vers le bas */
+    margin-left: 0.5rem; /* Marge à gauche */
+}
+
+.dropdown-toggle:hover {
+    color: #0056b3; /* Couleur du texte au survol */
+}
+
+.dropdown-toggle:hover::after {
+    content: '\25B2'; /* Flèche vers le haut au survol */
+}
+
+/* Afficher le menu déroulant au survol */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none; /* Masquer par défaut */
+    position: absolute; /* Position absolue */
+    z-index: 1; /* Z-index pour empiler au-dessus */
+    background-color: #fff; /* Couleur de fond */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Ombre */
+}
+
+.dropdown-menu li {
+    display: block; /* Affichage en bloc */
+}
+
+.dropdown-menu a {
+    display: block; /* Affichage en bloc */
+    padding: 0.5rem 1rem; /* Espacement intérieur */
+    color: #333; /* Couleur du texte */
+}
+
+.form-inline {
+    display: flex; /* Affichage en flexbox */
+}
+
+.form-control {
+    width: 100%; /* Largeur de 100% */
+    margin-right: 0.5rem; /* Marge à droite */
+}
+
+.btn {
+    display: inline-block; /* Affichage en ligne */
+    font-weight: bold; /* Gras */
+    text-decoration: none; /* Supprime la décoration du texte */
+    cursor: pointer; /* Curseur pointeur */
+    padding: 0.5rem 1rem; /* Espacement intérieur */
+    border: none; /* Pas de bordure */
+    border-radius: 0.25rem; /* Bordure arrondie */
+}
+
+.btn-outline-success {
+    color: #28a745; /* Couleur du texte */
+    border: 2px solid #28a745; /* Bordure */
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}
+
+/* Style pour les projets */
+#projets .container {
+    display: flex; /* Affichage en flexbox */
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: center; /* Alignement horizontal au centre */
+    gap: 2.5rem; /* Espacement entre les éléments */
+    padding: 1rem; /* Espacement intérieur */
+    flex-wrap: wrap; /* Enrouler les éléments sur plusieurs lignes si nécessaire */
+}
+
+.card {
+    background-color: #fff; /* Couleur de fond */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Ombre */
+    border-radius: 0.25rem; /* Bordure arrondie */
+    width: 30%;
+}
+
+.card img {
+    width: 100%; /* Largeur de 100% */
+    height: 200px; /* Hauteur fixe */
+    object-fit: cover; /* Redimensionner l'image */
+}
+
+.card-body {
+    padding: 1rem; /* Espacement intérieur */
+}
+
+/* Style pour la section "À Propos" */
+#apropos {
+    text-align: center; /* Alignement du texte au centre */
+    padding: 2rem 0; /* Espacement intérieur */
+    background: linear-gradient(rgba(22, 95, 53, 0.76), rgba(56, 220, 127, 0.5)), url('bg.jpg'); /* Dégradé de couleurs de fond avec image de fond */
+}
+
+/* Style pour le pied de page */
+footer {
+    background-color: #f8f9fa; /* Couleur de fond */
+    padding: 1rem 0; /* Espacement intérieur */
+    text-align: center; /* Alignement du texte au centre */
+    box-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.15); /* Ombre */
+}
+
+/* Style pour la section "Projets" */
+#projets {
+    padding: 2rem 0; /* Espacement intérieur */
+    text-align: center; /* Alignement du texte au centre */
+}
+
+/* Style pour l'en-tête */
+.navbar-brand {
+    font-size: 1.5rem; /* Taille de police */
+    font-weight: bold; /* Gras */
+    color: white; /* Couleur du texte */
+    background: linear-gradient(rgba(22, 95, 53, 0.76), rgba(56, 220, 127, 0.5)); /* Dégradé de couleurs de fond */
+    padding: 0.5rem 1rem; /* Espacement intérieur */
+    border-radius: 0.25rem; /* Bordure arrondie */
+    text-decoration: none; /* Supprime la décoration du texte */
+}
+
+#apropos {
+    margin-top: 40px; /* Marge supérieure */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Ombre */
+    color: white; /* Couleur du texte */
+}
