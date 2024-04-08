@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Porte-folio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre feuille de style CSS -->
+</head>
+<body>
+
+<!-- En-tête -->
+<header>
+    <!-- Barre de navigation -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">Navbar</a> <!-- Logo ou nom -->
+        <div class="navbar-collapse"> <!-- Contenu du menu -->
+            <!-- Liste des liens -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a> <!-- Lien actif -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a> <!-- Lien -->
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button">
+                        Dropdown <!-- Lien avec menu déroulant -->
+                    </a>
+                    <!-- Menu déroulant -->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a> <!-- Lien désactivé -->
+                </li>
+            </ul>
+            <!-- Formulaire de recherche -->
+            <form class="form-inline">
+                <input class="form-control" type="text" placeholder="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</header>
+
+<!-- Section Principale -->
+<main>
+    <!-- À Propos -->
+    <section id="apropos">
+        <h2>À Propos de Moi</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut nunc ultricies
+        </p>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <!-- Conteneur pour les projets -->
+        <div class="container">
+            <!-- Cartes de projet -->
+            <div class="card">
+                <img src="https://www.sherrardslaw.com/wp-content/uploads/2016/08/placeholder-350x150.png" alt="Image de Projet">
+                <div class="card-body">
+                    <h3>Titre du Projet</h3>
+                    <p>Description du Projet</p>
+                    <a href="#">Lien vers le Projet</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.sherrardslaw.com/wp-content/uploads/2016/08/placeholder-350x150.png" alt="Image de Projet">
+                <div class="card-body">
+                    <h3>Titre du Projet</h3>
+                    <p>Description du Projet</p>
+                    <a href="#">Lien vers le Projet</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.sherrardslaw.com/wp-content/uploads/2016/08/placeholder-350x150.png" alt="Image de Projet">
+                <div class="card-body">
+                    <h3>Titre du Projet</h3>
+                    <p>Description du Projet</p>
+                    <a href="#">Lien vers le Projet</a>
+                </div>
+            </div>
+            <!-- Répéter la structure de la carte pour chaque projet -->
+        </div>
+    </section>
+</main>
+
+<!-- Pied de Page -->
+<footer id="contact">
+    <p>Contactez-moi : email@example.com</p>
+</footer>
+
+</body>
+</html>
